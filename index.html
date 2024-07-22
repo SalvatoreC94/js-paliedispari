@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template-HTML-CSS-JS</title>
+    <title>Pali & Dispari</title>
     <!-- link CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- link Bootstrap -->
@@ -25,7 +25,30 @@
                         <input type="text" id="parola" class="form-control">
                     </div>
                     <button onclick="checkPalindrome()" class="btn btn-dark btn-block">Verifica</button>
-                    <p id="risultato" class="mt-3 text-center"></p>
+                    <p id="risultato" class="mt-3 text-center bg-dark text-white"></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container mt-5 my-bg">
+            <h1 class="text-center text-white">Gioco Pari o Dispari</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="form-group mb-4 text-white">
+                        <label for="scelta">Scegli pari o dispari:</label>
+                        <select id="scelta" class="form-control">
+                            <option value="pari">Pari</option>
+                            <option value="dispari">Dispari</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4 text-white">
+                        <label for="numero">Inserisci un numero da 1 a 5:</label>
+                        <input type="number" id="numero" class="form-control" min="1" max="5">
+                    </div>
+                    <button onclick="gioca()" class="btn btn-dark btn-block">Gioca</button>
+                    <p id="risultato-2" class="mt-3 text-center text-white"></p>
                 </div>
             </div>
         </div>
